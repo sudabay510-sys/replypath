@@ -3,7 +3,7 @@
 **Slug:** `replypath`  
 **Tagline:** A 30-day client outreach system for freelancers — process only, no income promises.  
 **Local port:** `5104`  
-**Status:** Local prototype only — no deploy, no real payments.
+**Status:** Live. Payments processed by Gumroad (Monthly or Quarterly).
 
 ## Audience persona
 Freelancers with real skills and a lumpy pipeline who need an outreach operating system.
@@ -33,11 +33,11 @@ Prefer flat geometric icons, soft corners matching `--radius`, no stock-photo pe
 ## Sample copy lines
 - Hero CTA: “Build my outreach plan”
 - Honesty: “No income, client-count, or “land 10 clients” guarantees. Process education only.”
-- Paywall: “Checkout coming soon: join founding list”
+- Paywall: “Start my plan” links to the Gumroad checkout URL.
 
 ## Do
-- Show intro **and** renewal prices.
-- Label founding list as no charge today.
+- Show Monthly and Quarterly prices, plus the renewal sentence, before checkout.
+- Save the customer’s email before sending them to Gumroad.
 - Keep disclaimers visible near plans.
 - Mobile-first quiz (one question per screen).
 
