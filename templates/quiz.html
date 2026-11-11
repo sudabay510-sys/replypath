@@ -2,8 +2,9 @@
 {% block title %}Question {{ n }} of {{ total }} — {{ brand.name }}{% endblock %}
 {% block body_class %}page-quiz{% endblock %}
 {% block content %}
-<section class="quiz-shell">
+<section class="quiz-shell q-replypath">
   <div class="wrap narrow">
+    <div class="rp-palette-h"><span class="rp-kbd">⌘K</span><span>step {{ n }}/{{ total }}</span><span class="rp-hint">↑↓ to move · space to select · enter to continue</span></div>
     <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ progress }}" aria-label="Quiz progress">
       <div class="progress-bar" style="width: {{ progress }}%"></div>
     </div>
@@ -54,4 +55,15 @@
     </form>
   </div>
 </section>
+{% endblock %}
+{% block scripts %}
+<script>
+/* Number keys 1-9 pick the matching option (progressive enhancement; nothing auto-submits). */
+document.addEventListener('keydown',function(e){
+  if(e.altKey||e.ctrlKey||e.metaKey||/^(INPUT|TEXTAREA)$/.test((e.target||{}).tagName)&&e.target.type==='text')return;
+  var n=parseInt(e.key,10); if(!n)return;
+  var opts=document.querySelectorAll('.choices .choice input'); var el=opts[n-1]; if(!el)return;
+  e.preventDefault(); el.click(); el.focus();
+});
+</script>
 {% endblock %}

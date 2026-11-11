@@ -1,0 +1,17 @@
+/* replypath layout compositions (phase 2). Loaded after identity.css. */
+.rp-copy{max-width:760px}
+.rp-board{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:2rem 0 .75rem}
+.rp-col{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.9rem;min-height:9rem}
+.rp-colh{font:700 .7rem var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:0 0 .6rem}
+.rp-col:nth-child(1) .rp-colh{color:#B5A6FF}.rp-col:nth-child(4) .rp-colh{color:var(--accent)}
+.rp-card{background:#22243A;border:1px solid var(--line);border-left:3px solid #7B61FF;border-radius:10px;padding:.7rem .8rem;font-size:.92rem}
+.rp-palette-h{display:flex;gap:.8rem;align-items:center;font:500 .8rem ui-monospace,monospace;color:var(--muted);margin-bottom:.6rem;flex-wrap:wrap}
+.rp-kbd{border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem;color:var(--accent)}
+.rp-hint{margin-left:auto}
+.page-quiz .tiny.muted{display:none}
+.rp-term{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.75rem;margin-bottom:1.5rem;box-shadow:0 0 0 1px rgba(198,255,61,.08),0 30px 60px rgba(0,0,0,.35)}
+.page-results .plan-preview,.page-results .plan-full{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.page-results .plan-preview>h2,.page-results .plan-full>h2,.page-results .plan-full>p{grid-column:1/-1}
+.rp-cardsec{margin:0}
+@media (max-width:860px){.rp-board{grid-template-columns:1fr 1fr}.rp-hint{display:none}}
+@media (max-width:480px){.rp-board{grid-template-columns:1fr}}
