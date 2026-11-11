@@ -2,10 +2,9 @@
 {% block title %}{{ brand.name }} — {{ brand.tagline }}{% endblock %}
 {% block body_class %}page-landing{% endblock %}
 {% block content %}
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">{{ brand.eyebrow }}</p>
+<section class="hero ly-hero">
+  <div class="wrap">
+    <div class="hero-copy rp-copy"><p class="eyebrow">{{ brand.eyebrow }}</p>
       <h1>{{ brand.hero_title }}</h1>
       <p class="lede">{{ brand.hero_lede }}</p>
       <div class="hero-actions">
@@ -13,16 +12,14 @@
         <a class="btn btn-lg btn-ghost" href="#how">See how it works</a>
       </div>
       <p class="tiny muted">{{ brand.honesty_line }}</p>
+      {% if brand.get('safety_note') %}
+<aside class="safety" role="note" aria-label="Safety note"><strong>{{ brand.safety_title or "Important" }}:</strong> {{ brand.safety_note }}</aside>
+{% endif %}</div>
+    <div class="rp-board" aria-label="Sample plan peek as a pipeline">
+      {% set cols = ['Lead list','Contacted','Replied','Call booked'] %}
+      {% for b in brand.sample_peek %}<div class="rp-col"><p class="rp-colh">{{ cols[loop.index0 % 4] }}</p><div class="rp-card">{{ b }}</div></div>{% endfor %}
     </div>
-    <div class="hero-card" aria-hidden="true">
-      <div class="card-label">Sample plan peek</div>
-      <ul class="peek-list">
-        {% for b in brand.sample_peek %}
-        <li><span class="dot"></span>{{ b }}</li>
-        {% endfor %}
-      </ul>
-      <div class="card-fade">Full plan unlocks after your quiz</div>
-    </div>
+    <p class="card-fade">Sample plan peek. The full system unlocks after your quiz. Nothing is ever sent for you.</p>
   </div>
 </section>
 
