@@ -701,7 +701,7 @@ BRANDS = {
         "checkout_url": "https://solvfix.gumroad.com/l/zccwvk",
         "disclaimer_short": "Process education only. No income, client-count, or revenue guarantees.",
         "disclaimer_long": "ReplyPath provides educational outreach and pipeline process materials for freelancers. It does not guarantee clients, income, or business results, and does not provide financial, legal, or tax advice. Do not use templates to spam or misrepresent your work. Payments are processed by Gumroad, not on this site.",
-        "font_url": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Syne:wght@600;700;800&display=swap",
+        "font_url": "https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap",
         "questions": RP_Q,
         "generate_plan": rp_plan,
         "secret_env": "REPLYPATH_SECRET",

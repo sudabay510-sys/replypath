@@ -1,0 +1,40 @@
+/* ReplyPath identity layer, Nov 2026 refresh: Dark pipeline board, keyboard-first. Loaded after brand.css; visual only. */
+:root{--bg:#0E0F1A;--bg-alt:#141526;--card:#171828;--ink:#F2F2F7;--muted:#A9ABC3;--line:#33354F;--accent:#C6FF3D;--accent-2:#B2EB2A;--on-accent:#0E0F1A;--hi:#7B61FF;--radius:10px;--focus:#C6FF3D;
+--font-display:'Unbounded', system-ui, sans-serif;--font-body:'DM Sans', system-ui, sans-serif;--tracking:-0.02em;--cta-band-bg:#22243A;--cta-band-ink:#FFFFFF;--cta-band-btn:#C6FF3D;--cta-band-btn-ink:#0E0F1A;
+--shadow-card:0 14px 34px rgba(0,0,0,.10);--shadow-btn:none}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink)}
+.skip:focus{background:var(--card);color:var(--ink);outline:3px solid var(--focus)}
+.btn:focus-visible,.choice:focus-within,a:focus-visible,.input:focus{outline:3px solid var(--focus);outline-offset:2px}
+.choice:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.choice input{accent-color:var(--accent);width:1.15rem;height:1.15rem;flex:none}
+.choice{min-height:3.25rem}
+.btn{min-height:2.75rem}
+.nav a.btn-primary,.nav a.btn-primary:hover{color:var(--on-accent)}
+.safety{border-left-width:6px;border-left-style:solid}
+@media (max-width:560px){.choice{padding:.9rem 1rem}.quiz-q{font-size:1.45rem}}
+
+h1,h2{font-weight:700}h1{letter-spacing:-.03em}
+.site-header{background:rgba(14,15,26,.9);border-bottom:1px solid var(--line)}
+.logo img{border-radius:10px}
+.hero{background:radial-gradient(700px 360px at 85% 0%,rgba(123,97,255,.28),transparent 60%),var(--bg)}
+.hero h1{background:linear-gradient(90deg,#F2F2F7 60%,#B5A6FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-card{background:var(--card);border:1px solid var(--line)}
+.hero-card .card-label::before{content:"⌘K  ";color:var(--accent)}
+.pill-card,.feature,.price-card,.steps li,.journey-card,.faq-item,.plan-section{background:var(--card);border-color:var(--line)}
+.section.alt{background:#141526}
+.choices{counter-reset:k;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:.4rem}
+.choice{counter-increment:k;border:0;background:transparent;border-radius:10px;align-items:center}
+.choice::after{content:counter(k);margin-left:auto;font:600 .75rem ui-monospace,monospace;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:.1rem .45rem}
+.choice:hover,.choice:focus-within{background:#22243A}
+.choice:has(input:checked){background:#22243A;box-shadow:inset 3px 0 0 var(--accent)}
+.input{background:#22243A;border-color:var(--line);color:var(--ink)}
+.progress{background:#22243A}.progress-bar{background:linear-gradient(90deg,#7B61FF,var(--accent))}
+.btn-ghost{color:var(--ink);border-color:var(--line)}
+.step-num,.journey-step{background:#22243A;color:var(--accent);border:1px solid var(--line)}
+.plan-section{border-top:3px solid #7B61FF}
+.lock-banner{background:linear-gradient(135deg,rgba(123,97,255,.22),var(--card));border-color:#7B61FF}
+.site-footer{background:#0B0C15}
+.badge{background:var(--accent);color:var(--on-accent)}
+.blur{color:var(--muted)}
+.safety{background:#22243A;border-color:#7B61FF;border-left-color:var(--accent)}
+.flash{background:#22243A}
