@@ -65,3 +65,25 @@ Prefer flat geometric icons, soft corners matching `--radius`, no stock-photo pe
 
 ## Logo file
 `static/logo.svg`
+
+
+## Identity refresh (Nov 2026)
+
+Visual layer only (`static/identity.css`, `static/logo.svg`, Google Fonts URL). Quiz questions, plan generation, routes, pricing, checkout/unlock, and safety notes are unchanged.
+
+- **Concept:** Dark pipeline board, keyboard-first. A calm night-mode workspace: the landing page is the pipeline, the quiz is a command palette, and the plan is a weekly board.
+- **Type:** Unbounded (display) / DM Sans (body)
+- **Voice:** A focused peer who’s been freelancing for years: brief, practical, allergic to hype.
+- **Persona (design assumption, not research):** Sam, freelance web designer between projects (assumption): Two retainer clients ended last month. Great at delivery, stops prospecting whenever busy.
+
+| Color | Hex |
+|---|---|
+| Midnight | `#0E0F1A` |
+| Panel | `#171828` |
+| Raise | `#22243A` |
+| Paper | `#F2F2F7` |
+| Electric lime | `#C6FF3D` |
+| Violet | `#7B61FF` |
+| Lilac | `#B5A6FF` |
+
+Full brand guide, persona, and journey: `quiz-to-plan-redesign/products/replypath/brand.html`.
